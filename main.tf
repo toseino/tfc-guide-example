@@ -24,6 +24,7 @@ resource "aws_instance" "ubuntu" {
   subnet_id     = "subnet-0d05a88c5576931e3"
 
   tags = {
-    Name = var.instance_name
+    Name                 = var.instance_name
+    "Linux Distribution" = "Ubuntu"
   }
 }
